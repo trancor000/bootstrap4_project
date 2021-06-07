@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -153,20 +153,87 @@
                 </div>
             </div>
         </section>
+        <!-- END SHOWTIMES-->
 
-
-        <div id="sign up now">
-            <div class="text-center">
-                <form>
-                    <h1 class="text-primary my">Sign up for Movie Club Rewards!</h1>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            aria-placeholder="Enter email">
+        <!-- JUMBOTRON-->
+        <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+                <h1 class="display-4 hidden-sm-down"
+                    style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">
+                    Movie Deals</h1>
+                <p class="lead">Check out our monthly deals...</p>
+                <!-- Movie Deals -->
+                <button type="button" class="btn btn-outline-primary" data-toggle="model" data-target="#register">See
+                    our monthly movie deals!
+                    <div class="alert alert-info" role="alert">
+                        <strong>Heads up!</strong> Sign up before checking out these sweet deals!
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                </button>
+                <!-- /moviedeals -->
             </div>
         </div>
+        <!-- /jumbotron heading -->
+
+        <!-- SIGN UP -->
+        <div id="sign up now">
+            <div clas="container text-center col-xd-6" id="deals">
+                <div class="text-center">
+                    <h1 class="display-5 my-4 col-lg-auto text-primary">Sign up for Movie Club Rewards!</h1>
+                    <div class="input-group xb-5 input-group-sm">
+                        <input type="text" class="form-control" placeholder="Email">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-secondary btn-info popover-dismiss"
+                                data-container="body" data-toggle="popover" data-placement="top"
+                                data-content="Submit your email to receive great movie reward details.">
+                                Popover on top
+                                Sign up!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /signup form -->
+
+        <!-- form modal -->
+        <div class="modal fade" id="register">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Register to receive movie deals...</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <fieldset class="form-group row">
+                                <label for="firstname">First Name</label>
+                                <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                            </fieldset>
+                            <fieldset class="form-group row">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                            </fieldset>
+                            <fieldset class="form-group row">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email...">
+                            </fieldset>
+                            <fieldset class="form-group row">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password...">
+                            </fieldset>
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /form modal -->
 
         <div class="container">
             <ul class="nav nav-inline">
@@ -198,6 +265,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     -->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        })
+    </script>
 </body>
 
 </html>
